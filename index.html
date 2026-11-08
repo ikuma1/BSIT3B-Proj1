@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
     
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestro-Website</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to PBB</h1>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <a href="#home" class="logo">Maui Ahyen Rome Nuestro</a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Service</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <a href="#contact" class="btn btn-small">Contact</a>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+
+    <div class="hero-text">
+        <img src="https://i.pinimg.com/originals/75/1d/b4/751db4bf802c34e7aceeee8aeaf51330.jpg" alt="My photo" class="avatar">
+      <h2>Hi, I'm <span class="script">Maui Ahyen Rome A. Nuestro</span></h2>
+      <h1>Student</h1>
+      <p>
+        Time waits for no one, but good design is worth every second.
+        A student at CvSU who is passionate about technology. I'm learning
+        programming and basic networking, and I enjoy turning ideas into
+        clean, dark-themed websites.
+      </p>
+
+      <p class="find">Find Me on</p>
+      <div class="socials">
+        <a href="https://www.facebook.com/Llynkxs" aria-label="Facebook">Fb</a>
+        <a href="https://discordapp.com/users/648154075312947205" aria-label="Discord">Dc</a>
+        <a href="#" aria-label="Instagram">Ig</a>
+        <a href="#" aria-label="Pinterest">Pi</a>
+      </div>
+
+      <div class="buttons">
+        <a href="#contact" class="btn">Hire me</a>
+      </div>
+    </div>
+
+    <!--Picture-->
+    <div class="hero-visual">
+      <div class="clock">
+        <span class="num n12">XII</span>
+        <span class="num n1">I</span>
+        <span class="num n2">II</span>
+        <span class="num n3">III</span>
+        <span class="num n4">IV</span>
+        <span class="num n5">V</span>
+        <span class="num n6">VI</span>
+        <span class="num n7">VII</span>
+        <span class="num n8">VIII</span>
+        <span class="num n9">IX</span>
+        <span class="num n10">X</span>
+        <span class="num n11">XI</span>
+        <div class="hand hour"></div>
+        <div class="hand minute"></div>
+        <div class="hand second"></div>
+        <div class="pin"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <h2 class="title">About <span>Me</span></h2>
+    <p class="lead">
+  I started using computers at a very young age, and that early curiosity
+  grew into a passion for technology. Today I'm learning programming and
+  basic networking, building my skills one project at a time. Outside of
+  tech, I love watching anime, reading manga and light novels, and playing
+  games, which inspire much of my creativity and design taste.
+    </p>
+    <div class="stats">
+      <div><strong>0</strong><span>Years Experience</span></div>
+      <div><strong>0</strong><span>Projects Done</span></div>
+      <div><strong>0</strong><span>Happy Clients</span></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <h2 class="title">My <span>Services</span></h2>
+    <div class="cards">
+      <article class="card">
+        <h3>Web Design</h3>
+        <p>Clean.</p>
+      </article>
+      <article class="card">
+        <h3>Front-End</h3>
+        <p> HTML And CSS built with care.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <h2 class="title">My <span>Projects</span></h2>
+    <div class="cards">
+      <article class="card project"><div class="thumb">N/A</div><h3>N/A</h3></article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <h2 class="title">Get In <span>Touch</span></h2>
+    <form onsubmit="event.preventDefault(); alert('Thanks! (Connect this form to a backend or Formspree.)');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>&copy; 2026 Your Name. All rights reserved.</footer>
+
 </body>
 </html>
